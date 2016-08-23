@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=320.1,minimum-scale=1.0,maximum-scale=1.0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="header-left">
+            <div class="header-btn handlogo"></div>
+            <div class="header-btn userhome"></div>
+        </div>
+        <div class="header-right">
+            <div class="header-btn subscribe"></div>
+            <div class="header-btn search"></div>
+        </div>
+    </header>
+    <!-- 身体包裹 -->
+    <div class="wrp">
+        <div class="nav-wrp">
+            <!-- 导航 -->
+            <div class="divider"></div>
+            <div class="main-nav">
+                <table>
+                    <tbody>
+                        <tr class="tr-line">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="onclick cur" id="type1">推荐</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="onclick" id="type2">百家</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="onclick" id="type3">本地</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="onclick" id="type4">图片</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span class="onclick" id="type5">娱乐</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>社会</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tr-line">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>军事</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>女人</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>搞笑</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>科技</span>
+                                </div>
+                            </td>
+                            <td colspan="2">
+                                <div>
+                                    <b></b>
+                                    <span id="span-online" style="display: none">互联网</span>
+                                    <div class="more">
+                                        更多
+                                        <div class="down-triangle"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>生活</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>国际</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>国内</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>体育</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>汽车</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>财经</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>房产</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>时尚</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>教育</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>游戏</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>旅游</span>
+                                </div>
+                            </td>
+                            <td colspan="1">
+                                <div>
+                                    <b></b>
+                                    <span>人文</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td colspan="2">
+                                <div>
+                                    <b></b>
+                                    <span>创意</span>
+                                </div>
+                            </td>
+                            <td colspan="2">
+                                <div>
+                                    <b></b>
+                                    <span>互联网+</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="footer" style="display: none">
+                <div class="btn-group">
+                    <div class="reporter-rank">记者榜</div>
+                    <div class="media-rank"><b></b>媒体榜</div>
+                    <div class="manage-subscribe"><b></b>删除及排序</div>
+                </div>
+                <div class="less">收起
+                    <div class="up-triangle"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 主身体 -->
+        <div class="content">
+            <div class="imgmove">
+                <!-- 图片轮播 -->
+                <div class="g-list" style="margin-left: -100%">
+                    <div class="g-item">
+                        <div class="g-item-innerbox">
+                            <div class="g-imagebox">
+                                <img src="images/car.jpg">
+                            </div>
+                            <h4 class="g-title"><span>江西女司机车祸后弃车回家吃饭</span></h4>
+                        </div>
+                    </div>
+                    <div class="g-item">
+                        <div class="g-item-innerbox">
+                            <div class="g-imagebox">
+                                <img src="images/xigua.jpg">
+                            </div>
+                            <h4 class="g-title"><span>大学生西瓜大战减压 互扔瓜瓤</span></h4>
+                        </div>
+                    </div>
+                    <div class="g-item">
+                        <div class="g-item-innerbox">
+                            <div class="g-imagebox">
+                                <img src="images/xiong.jpg">
+                            </div>
+                            <h4 class="g-title"><span>夫妇养270斤熊23年 同桌进餐</span></h4>
+                        </div>
+                    </div>
+                    <div class="g-item">
+                        <div class="g-item-innerbox">
+                            <div class="g-imagebox">
+                                <img src="images/car.jpg">
+                            </div>
+                            <h4 class="g-title"><span>江西女司机车祸后弃车回家吃饭</span></h4>
+                        </div>
+                    </div>
+                    <div class="g-item">
+                        <div class="g-item-innerbox">
+                            <div class="g-imagebox">
+                                <img src="images/xigua.jpg">
+                            </div>
+                            <h4 class="g-title"><span>大学生西瓜大战减压 互扔瓜瓤</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- 滚动显示条 -->
+                <div class="g-icons">
+                    <i class="cur"></i>
+                    <i class=""></i>
+                    <i class=""></i>
+                </div>
+            </div>
+            <div class="hotword">
+                <!-- 热词新闻 -->
+                <div class="hotword-left">
+                    <span>热点</span>
+                </div>
+                <div class="hotword-right">
+                    <span>南方多地将再迎强降雨</span>
+                    <b class="hotword-right-item"></b>
+                </div>
+            </div>
+            <div class="index-view-subpage-feed">
+                <!-- 主新闻 -->
+                <div class="index-list">
+                    <div class="index-list-item">
+                        <div class="index-list-main showleft">
+                            <div class="index-list-image">
+                                <img src="http://a.hiphotos.baidu.com/news/q%3D100/sign=c4a6aaef1a950a7b73354ac43ad3625c/6159252dd42a2834bc35c7d25cb5c9ea14cebf5c.jpg">
+                            </div>
+                            <div class="index-list-main-text">
+                                <div class="index-list-main-title">习近平深化国防和军队改革论述摘编印发</div>
+                                <div class="index-list-main-abs">该书内容，摘自习近平2012年11月至2015年11月期间的讲话、批示等重要文献，集中体现了习...</div>
+                            </div>
+                            <div class="index-list-bottom">
+                                <div class="index-list-main-time">
+                                    <b class="display-b tip-fillred tip-topnews">置顶</b>
+                                    <b class="index-list-main-site">网易专题</b>
+                                    <b class="tip-time">2小时前</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-list-item">
+                        <div class="index-list-main showleft">
+                            <div class="index-list-image">
+                                <img src="http://t12.baidu.com/it/u=http://n1.itc.cn/img7/adapt/wb/common/2016/05/30/146459392513682649_620_1000.JPEG&fm=36">
+                            </div>
+                            <div class="index-list-main-text">
+                                <div class="index-list-main-title">啥情况?5陌生男持木棍铁锤砸车 车内母女被吓哭</div>
+                                <div class="index-list-main-abs">女子开车带女儿出门，突然5名男子将车截下，持木棍和铁锤对着车身猛砸。</div>
+                            </div>
+                            <div class="index-list-bottom">
+                                <div class="index-list-main-time">
+                                    <b class="display-b tip-fillred tip-topnews">搜狐要闻</b>
+                                    <b class="index-list-main-site">搜狐要闻</b>
+                                    <b class="tip-time">1分钟前</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-list-item">
+                        <div class="index-list-main showleft">
+                            <div class="index-list-image">
+                                <img src="http://t12.baidu.com/it/u=http://s2.doyo.cn/img/4f/68/51759e9e78743f007aa7.png&fm=36">
+                            </div>
+                            <div class="index-list-main-text">
+                                <div class="index-list-main-title">水煮江山5阶武将满属性鉴定公式</div>
+                                <div class="index-list-main-abs">瞧了这么几天5阶武将的发图。</div>
+                            </div>
+                            <div class="index-list-bottom">
+                                <div class="index-list-main-time">
+                                    <b class="tip-time">3分钟前</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-list-item">
+                        <div class="index-list-main-text">
+                            <div class="index-list-main-title">英诺天使林森：创业失败的根源就是迷失了自我 </div>
+                        </div>
+                        <div class="index-list-album-container">
+                            <div class="index-list-album">
+                                <div class="index-list-album-wrapper one">
+                                    <img src="http://t11.baidu.com/it/u=http://cdn.lieyunwang.com/wp-content/uploads/2016/05/c4ca4238a0b923830.png?imageMogr2/strip/interlace/0/quality/85/format/jpg&amp;fm=36">
+                                </div>
+                            </div>
+                            <div class="index-list-album">
+                                <div class="index-list-album-wrapper two">
+                                    <img src="http://t10.baidu.com/it/u=http://cdn.lieyunwang.com/wp-content/uploads/2016/05/c81e728d9d4c2f635.png?imageMogr2/strip/interlace/1/quality/80/format/jpg&amp;fm=36">
+                                </div>
+                            </div>
+                            <div class="index-list-album">
+                                <div class="index-list-album-wrapper three">
+                                    <img src="http://t11.baidu.com/it/u=http://cdn.lieyunwang.com/wp-content/uploads/2016/05/eccbc87e4b5ce2f26.png?imageMogr2/strip/interlace/1/quality/80/format/jpg&amp;fm=36">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-list-bottom">
+                            <div class="index-list-main-time">
+                                <b class="index-list-main-site">猎云网</b>
+                                <b class="tip-time">8秒钟前</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-list-item">
+                        <div class="index-list-main showleft">
+                            <div class="index-list-image">
+                                <i class="ivideoplay"></i>
+                                <img src="http://t10.baidu.com/it/u=http://n.sinaimg.cn/finance/transform/20160530/FOS4-fxsqxxu4677274.jpg&amp;fm=36">
+                            </div>
+                            <div class="index-list-main-text">
+                                <div class="index-list-main-title">A股已经进入重组吹牛逼比赛时间</div>
+                                <div class="index-list-main-abs">2015年的重组平均增值率为737%，到2016年以来已经飙升到1334%了，最高的将近500倍。</div>
+                            </div>
+                            <div class="index-list-bottom">
+                                <div class="index-list-main-time">
+                                    <b class="index-list-main-site">新浪财经</b>
+                                    <b class="tip-time">5分钟前</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-list-item">
+                        <div class="index-list-main">
+                            <div class="index-list-main-text">
+                                <div class="index-list-main-title">他是融资、并购、垄断的鼻祖 得其一二便可纵横商界 这才是真正的商界屠夫!</div>
+                            </div>
+                            <div class="index-list-album-container">
+                                <div class="index-list-album">
+                                    <div class="index-list-album-wrapper one">
+                                        <img src="http://t12.baidu.com/it/u=http://www.100tmt.com/uploadimage/images/20160530154518.jpg&amp;fm=36">
+                                    </div>
+                                </div>
+                                <div class="index-list-album">
+                                    <div class="index-list-album-wrapper two">
+                                        <img src="http://t11.baidu.com/it/u=http://www.100tmt.com/uploadimage/images/20160530154535.jpg&amp;fm=36">
+                                    </div>
+                                </div>
+                                <div class="index-list-album">
+                                    <div class="index-list-album-wrapper three">
+                                        <img src="http://t11.baidu.com/it/u=http://www.100tmt.com/uploadimage/images/20160530154621.jpg&amp;fm=36">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="index-list-bottom">
+                                <div class="index-list-main-time">
+                                    <b class="index-list-main-site">创客100</b>
+                                    <b class="tip-time">5分钟前</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="morewrp">
+                    <!-- 点击加载更多 -->
+                    <div class="moremoremore">点击加载更多
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+
+</html>
